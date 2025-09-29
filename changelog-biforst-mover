@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Changelog BIFORST MOVER v2.0.0-L - Fitur baru dan perbaikan bug">
+    <title>BIFORST MOVER - Changelog v2.0.0-L</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .app-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .version {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .changelog-title {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4facfe;
+        }
+
+        .section-icon {
+            font-size: 1.8rem;
+            margin-right: 15px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .feature-group {
+            margin-bottom: 25px;
+        }
+
+        .feature-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #4facfe;
+            margin-bottom: 8px;
+        }
+
+        .feature-list {
+            margin-left: 20px;
+        }
+
+        .feature-item {
+            margin-bottom: 8px;
+            color: #555;
+            position: relative;
+        }
+
+        .feature-item::before {
+            content: '▶';
+            color: #4facfe;
+            margin-right: 8px;
+            font-size: 0.8rem;
+        }
+
+        .sub-feature {
+            margin-left: 20px;
+            margin-top: 5px;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .sub-feature::before {
+            content: '◦';
+            color: #999;
+            margin-right: 8px;
+        }
+
+        .bug-fix-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: rgba(102, 126, 234, 0.1);
+            border-left: 4px solid #4facfe;
+            border-radius: 5px;
+        }
+
+        .bug-fix-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .bug-fix-description {
+            color: #666;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .app-title {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .section-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section-icon {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container fade-in">
+        <div class="header">
+            <div class="header-content">
+                <h1 class="app-title">BIFORST MOVER</h1>
+                <div class="version">v2.0.0-L</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 class="changelog-title">CHANGELOG</h2>
+
+            <!-- Fitur Baru Section -->
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🚀</div>
+                    <h3 class="section-title">Fitur Baru</h3>
+                </div>
+
+                <div class="feature-group">
+                    <div class="feature-title">Login</div>
+                    <div class="feature-list">
+                        <div class="feature-item">Penambahan opsi login menggunakan <span class="highlight">akun
+                                Google</span>.</div>
+                    </div>
+                </div>
+
+                <div class="feature-group">
+                    <div class="feature-title">Dashboard</div>
+                    <div class="feature-list">
+                        <div class="feature-item">Penambahan <span class="highlight">Chart Statistik Kehadiran</span>.
+                        </div>
+                        <div class="feature-item">Penambahan <span class="highlight">Rating Driver</span>, dihitung
+                            berdasarkan:
+                            <div class="sub-feature">Scan faktur keluar + foto.</div>
+                            <div class="sub-feature">Scan faktur terkirim + foto.</div>
+                        </div>
+                        <div class="feature-item">Perubahan judul "Quick Action/Aksi Cepat" menjadi informasi singkat
+                            terkait <span class="highlight">Rating User</span>.</div>
+                        <div class="feature-item">Penambahan fitur <span class="highlight">pencarian melalui scan
+                                barcode</span>.</div>
+                    </div>
+                </div>
+
+                <div class="feature-group">
+                    <div class="feature-title">Smart Button Detection</div>
+                    <div class="feature-list">
+                        <div class="feature-item">Kondisi <span class="highlight">online</span> → tombol Submit langsung
+                            mengirim data ke server.</div>
+                        <div class="feature-item">Kondisi <span class="highlight">offline</span> → tombol berubah
+                            menjadi Save Offline untuk penyimpanan sementara di perangkat.</div>
+                    </div>
+                </div>
+
+                <div class="feature-group">
+                    <div class="feature-title">Button Ticket</div>
+                    <div class="feature-list">
+                        <div class="feature-item">Telah tersedia, namun sementara diarahkan ke website (fitur ticketing
+                            telah aktif di sana).</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Perbaikan Bug Section -->
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🛠️</div>
+                    <h3 class="section-title">Perbaikan Bug</h3>
+                </div>
+
+                <div class="bug-fix-item">
+                    <div class="bug-fix-title">Masa aktif token/session</div>
+                    <div class="bug-fix-description">Jika kedaluwarsa, sistem otomatis mengarahkan kembali ke halaman
+                        login.</div>
+                </div>
+
+                <div class="bug-fix-item">
+                    <div class="bug-fix-title">Performa scan log</div>
+                    <div class="bug-fix-description">Peningkatan kecepatan dengan penerapan smart upload.</div>
+                </div>
+
+                <div class="bug-fix-item">
+                    <div class="bug-fix-title">Batch Upload (Data Lokal)</div>
+                    <div class="bug-fix-description">Perbaikan bug yang sebelumnya selalu menampilkan error <em>Internet
+                            connection</em>.</div>
+                </div>
+
+                <div class="bug-fix-item">
+                    <div class="bug-fix-title">Halaman Rekap Absensi</div>
+                    <div class="bug-fix-description">Perbaikan error saat proses akses data.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 BIFORST MOVER. Semua hak dilindungi undang-undang.</p>
+            <p>Terima kasih telah menggunakan aplikasi kami! 🙏</p>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling and interactive effects
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add fade-in animation to sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach((section, index) => {
+                setTimeout(() => {
+                    section.style.animation = `fadeIn 0.6s ease-in ${index * 0.2}s both`;
+                }, 100);
+            });
+
+            // Add hover effects to feature items
+            const featureItems = document.querySelectorAll('.feature-item, .bug-fix-item');
+            featureItems.forEach(item => {
+                item.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateX(5px)';
+                    this.style.transition = 'transform 0.3s ease';
+                });
+
+                item.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateX(0)';
+                });
+            });
+
+            // Add click to copy functionality for version
+            const version = document.querySelector('.version');
+            version.addEventListener('click', function () {
+                navigator.clipboard.writeText('v2.0.0-L').then(function () {
+                    const originalText = version.textContent;
+                    version.textContent = 'Copied! ✓';
+                    setTimeout(() => {
+                        version.textContent = originalText;
+                    }, 1500);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
