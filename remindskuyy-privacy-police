@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kebijakan Privasi RemindSkuyy</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    color: #1f2937;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    background: #ffffff;
+  }
+  h1 {
+    font-size: 2em;
+    color: #0a0e27;
+    border-bottom: 3px solid #0a0e27;
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+  }
+  h2 {
+    font-size: 1.4em;
+    color: #111b3d;
+    margin-top: 40px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 8px;
+  }
+  h3 {
+    font-size: 1.1em;
+    color: #374151;
+    margin-top: 24px;
+  }
+  p, li {
+    font-size: 1em;
+  }
+  ul, ol {
+    padding-left: 24px;
+  }
+  li {
+    margin-bottom: 6px;
+  }
+  .meta {
+    color: #6b7280;
+    font-size: 0.9em;
+    margin-bottom: 32px;
+  }
+  .highlight {
+    background: #f3f4f6;
+    border-left: 4px solid #0a0e27;
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin: 16px 0;
+  }
+  .highlight strong {
+    color: #0a0e27;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+  }
+  th, td {
+    border: 1px solid #e5e7eb;
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 0.95em;
+  }
+  th {
+    background: #f9fafb;
+    font-weight: 600;
+  }
+  code {
+    background: #f3f4f6;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  .footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+    color: #6b7280;
+    font-size: 0.85em;
+    text-align: center;
+  }
+  a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<h1>🔒 Kebijakan Privasi RemindSkuyy</h1>
+<p class="meta">
+  <strong>Terakhir diperbarui:</strong> 14 September 2026<br>
+  <strong>Aplikasi:</strong> RemindSkuyy (Android)<br>
+  <strong>Versi:</strong> 1.0.0
+</p>
+
+<div class="highlight">
+  <strong>Ringkasan:</strong> RemindSkuyy adalah aplikasi <em>offline-first</em> — semua data keuangan Anda (tagihan, hutang, cicilan, pembayaran) <strong>disimpan secara lokal di perangkat Anda</strong> dan tidak pernah dikirim ke server kami. Kami tidak memiliki akun, tidak meminta email, dan tidak menjual data Anda kepada siapa pun.
+</div>
+
+<h2>1. Pendahuluan</h2>
+<p>
+  Kebijakan Privasi ini menjelaskan bagaimana RemindSkuyy ("kami", "aplikasi") mengumpulkan, menggunakan, dan melindungi informasi Anda saat menggunakan aplikasi RemindSkuyy di perangkat Android.
+</p>
+<p>
+  Dengan menginstal dan menggunakan aplikasi ini, Anda menyetujui praktik yang dijelaskan dalam kebijakan ini.
+</p>
+
+<h2>2. Data yang Kami Kumpulkan</h2>
+
+<h3>2.1 Data yang Disimpan Lokal di Perangkat Anda</h3>
+<p>Semua data berikut <strong>hanya disimpan di perangkat Anda</strong> (database lokal SQLite) dan tidak pernah dikirim ke server kami:</p>
+<ul>
+  <li><strong>Data Obligasi/Tagihan:</strong> judul, deskripsi, jumlah, tanggal jatuh tempo, status, jenis (hutang, PayLater, kartu kredit, cicilan, pinjaman, langganan, tagihan, piutang, dll).</li>
+  <li><strong>Data Pembayaran:</strong> riwayat pembayaran, jumlah, metode pembayaran, tanggal, catatan.</li>
+  <li><strong>Data Kontak:</strong> nama, nomor telepon, email, catatan (jika Anda menambahkannya secara manual).</li>
+  <li><strong>Data Penyedia:</strong> nama penyedia layanan (mis. Shopee PayLater, GoPay, dll) yang Anda pilih atau buat.</li>
+  <li><strong>Data Pengaturan:</strong> preferensi bahasa, tema, mata uang, waktu pengingat, status onboarding.</li>
+</ul>
+
+<h3>2.2 Data yang Dikumpulkan Secara Otomatis (Firebase)</h3>
+<p>
+  Aplikasi ini menggunakan layanan Google Firebase untuk meningkatkan kualitas dan stabilitas aplikasi. Data berikut dikumpulkan secara otomatis:
+</p>
+<table>
+  <tr>
+    <th>Layanan</th>
+    <th>Data yang Dikumpulkan</th>
+    <th>Tujuan</th>
+  </tr>
+  <tr>
+    <td><strong>Firebase Analytics</strong></td>
+    <td>Peristiwa penggunaan aplikasi (halaman yang dibuka, tombol yang ditekan), jenis perangkat, versi OS, negara, bahasa</td>
+    <td>Memahami cara pengguna menggunakan aplikasi untuk perbaikan fitur</td>
+  </tr>
+  <tr>
+    <td><strong>Firebase Crashlytics</strong></td>
+    <td>Laporan crash, stack trace, informasi perangkat, versi aplikasi</td>
+    <td>Mendeteksi dan memperbaiki bug agar aplikasi lebih stabil</td>
+  </tr>
+  <tr>
+    <td><strong>Firebase Performance Monitoring</strong></td>
+    <td>Metrik performa aplikasi (waktu loading, responsivitas)</td>
+    <td>Mengoptimalkan kecepatan dan performa aplikasi</td>
+  </tr>
+  <tr>
+    <td><strong>Firebase Cloud Messaging (FCM)</strong></td>
+    <td>Token perangkat (device token) untuk notifikasi push</td>
+    <td>Mengirim notifikasi pengingat dan informasi penting</td>
+  </tr>
+</table>
+
+<div class="highlight">
+  <strong>Penting:</strong> Data keuangan Anda (jumlah tagihan, riwayat pembayaran, dll) <strong>tidak pernah</strong> dikirim ke Firebase atau pihak ketiga mana pun. Firebase hanya menerima data teknis (analytics, crash, performa) yang bersifat anonim dan agregat.
+</div>
+
+<h2>3. Bagaimana Data Kami Gunakan</h2>
+<p>Data yang kami kumpulkan digunakan untuk:</p>
+<ul>
+  <li>Menjalankan fungsi inti aplikasi: mencatat tagihan, mengingatkan pembayaran, dan menampilkan laporan keuangan Anda.</li>
+  <li>Mengirim notifikasi pengingat sesuai jadwal yang Anda atur.</li>
+  <li>Menganalisis penggunaan aplikasi secara agregat untuk meningkatkan pengalaman pengguna.</li>
+  <li>Mendeteksi dan memperbaiki crash serta masalah performa.</li>
+  <li>Menyediakan fitur backup &amp; restore (ekspor/impor data JSON) yang sepenuhnya dikendalikan oleh Anda.</li>
+</ul>
+
+<h2>4. Izin yang Diminta Aplikasi</h2>
+<table>
+  <tr>
+    <th>Izin</th>
+    <th>Alasan</th>
+  </tr>
+  <tr>
+    <td><strong>Notifikasi</strong> (POST_NOTIFICATIONS)</td>
+    <td>Menampilkan pengingat pembayaran tagihan sesuai jadwal yang Anda atur. Anda dapat menolak atau mencabut izin ini kapan saja melalui pengaturan perangkat.</td>
+  </tr>
+  <tr>
+    <td><strong>Boot Completed</strong> (RECEIVE_BOOT_COMPLETED)</td>
+    <td>Menjadwalkan ulang notifikasi pengingat setelah perangkat dinyalakan ulang agar pengingat tetap aktif.</td>
+  </tr>
+  <tr>
+    <td><strong>Getaran</strong> (VIBRATE)</td>
+    <td>Memberikan getaran pada notifikasi pengingat.</td>
+  </tr>
+  <tr>
+    <td><strong>Internet</strong> (INTERNET)</td>
+    <td>Digunakan untuk layanan Firebase (analytics, crash reporting, notifikasi push). Tidak digunakan untuk mengirim data keuangan Anda.</td>
+  </tr>
+</table>
+
+<h2>5. Penyimpanan dan Keamanan Data</h2>
+<ul>
+  <li>Semua data keuangan Anda disimpan <strong>lokal di perangkat Anda</strong> dalam database terenkripsi perangkat (SQLite).</li>
+  <li>Kami <strong>tidak memiliki server</strong> yang menyimpan data Anda.</li>
+  <li>Data yang dikirim ke Firebase (analytics, crash) dilindungi dengan enkripsi HTTPS standar industri.</li>
+  <li>Jika Anda menghapus aplikasi, semua data lokal akan terhapus permanen dari perangkat Anda.</li>
+</ul>
+
+<h2>6. Fitur Backup &amp; Restore</h2>
+<p>
+  RemindSkuyy menyediakan fitur <strong>backup</strong> (ekspor data ke file JSON) dan <strong>restore</strong> (impor data dari file JSON). Fitur ini sepenuhnya dikendalikan oleh Anda:
+</p>
+<ul>
+  <li>File backup <strong>disimpan di lokasi yang Anda pilih</strong> (mis. Google Drive, email, atau penyimpanan lokal).</li>
+  <li>File backup berisi <strong>semua data keuangan Anda</strong> — simpan di tempat yang aman.</li>
+  <li>Kami tidak memiliki akses ke file backup Anda.</li>
+  <li>Anda dapat berbagi file backup melalui aplikasi berbagi apa pun yang tersedia di perangkat Anda.</li>
+</ul>
+
+<h2>7. Layanan Pihak Ketiga</h2>
+<p>Aplikasi ini menggunakan layanan pihak ketiga berikut:</p>
+<ul>
+  <li><strong>Google Firebase</strong> (Analytics, Crashlytics, Performance, Cloud Messaging) — dikelola oleh Google LLC. Data yang dikumpulkan tunduk pada <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Kebijakan Privasi Google</a>.</li>
+</ul>
+<p>Kami tidak menjual, menyewakan, atau membagikan data Anda kepada pihak ketiga mana pun untuk tujuan pemasaran atau komersial.</p>
+
+<h2>8. Hak Anda</h2>
+<p>Anda memiliki hak penuh atas data Anda:</p>
+<ul>
+  <li><strong>Mengakses:</strong> Semua data Anda dapat dilihat langsung di dalam aplikasi.</li>
+  <li><strong>Mengekspor:</strong> Gunakan fitur backup untuk mengekspor seluruh data Anda ke file JSON.</li>
+  <li><strong>Menghapus:</strong> Hapus data individual di dalam aplikasi, atau hapus aplikasi untuk menghapus semua data.</li>
+  <li><strong>Menarik izin:</strong> Cabut izin notifikasi kapan saja melalui pengaturan perangkat Android Anda.</li>
+  <li><strong>Menonaktifkan analytics:</strong> Anda dapat menonaktifkan pengumpulan data analytics melalui pengaturan privasi perangkat Android (opsi "Hapus data iklan/analytics" atau reset ID perangkat).</li>
+</ul>
+
+<h2>9. Privasi Anak-Anak</h2>
+<p>
+  Aplikasi ini tidak ditujukan untuk anak-anak di bawah 13 tahun dan tidak secara sengaja mengumpulkan data pribadi dari anak-anak. Jika Anda yakin anak Anda telah memberikan data pribadi melalui aplikasi ini, silakan hubungi kami agar data tersebut dapat dihapus.
+</p>
+
+<h2>10. Perubahan Kebijakan Privasi</h2>
+<p>
+  Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Setiap perubahan akan diumumkan melalui pembaruan aplikasi dan halaman ini. Tanggal "Terakhir diperbarui" di bagian atas halaman ini akan menunjukkan kapan perubahan terakhir dilakukan. Kami menyarankan Anda untuk meninjau halaman ini secara berkala.
+</p>
+
+<h2>11. Kontak</h2>
+<p>
+  Jika Anda memiliki pertanyaan, saran, atau kekhawatiran mengenai Kebijakan Privasi ini atau praktik privasi aplikasi, silakan hubungi kami melalui:
+</p>
+<ul>
+  <li><strong>Email:</strong> [GANTI-DENGAN-EMAIL-ANDA@email.com]</li>
+  <li><strong>GitHub:</strong> <a href="https://github.com/MHasanudin" target="_blank" rel="noopener">github.com/MHasanudin</a></li>
+</ul>
+
+<div class="footer">
+  <p>© 2026 RemindSkuyy. Semua hak dilindungi.</p>
+  <p>Dokumen ini dibuat untuk aplikasi RemindSkuyy versi 1.0.0.</p>
+</div>
+
+</body>
+</html>
