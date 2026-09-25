@@ -3,33 +3,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Kebijakan Privasi MoTrax terkait pengumpulan, penggunaan, penyimpanan, dan perlindungan data pribadi pengguna MoTrax.">
+    <meta name="description" content="Kebijakan Privasi MoTrax mengenai pemrosesan, penggunaan, penyimpanan, dan perlindungan data pribadi pengguna.">
     <title>Kebijakan Privasi — MoTrax</title>
 
     <style>
         :root {
             color-scheme: light;
-            --navy-950: #041c32;
-            --navy-800: #075182;
-            --navy-700: #0a629c;
+            --navy: #075182;
+            --navy-dark: #041c32;
             --orange: #fa6608;
-            --orange-soft: #fff2e8;
-            --blue-soft: #f4f8fb;
-            --white: #ffffff;
-            --gray-50: #f8fafc;
-            --gray-200: #e2e8f0;
-            --gray-500: #64748b;
-            --gray-600: #475569;
-            --gray-700: #334155;
-            --gray-900: #0f172a;
-            --green: #047857;
-            --green-soft: #d1fae5;
-            --red: #b91c1c;
-            --red-soft: #fee2e2;
-            --amber: #b45309;
-            --amber-soft: #fef3c7;
-            --radius: 14px;
-            --shadow: 0 12px 30px rgba(4, 28, 50, 0.08);
+            --surface: #ffffff;
+            --surface-subtle: #f8fafc;
+            --canvas: #f3f6f8;
+            --border: #dbe3e9;
+            --text: #263746;
+            --text-strong: #102a43;
+            --muted: #607385;
+            --radius: 10px;
+            --shadow: 0 8px 24px rgba(4, 28, 50, 0.07);
         }
 
         *,
@@ -40,21 +31,21 @@
 
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 24px;
+            scroll-padding-top: 20px;
         }
 
         body {
             margin: 0;
-            color: var(--gray-700);
-            background: linear-gradient(180deg, #edf5fa 0, #f8fafc 360px);
+            color: var(--text);
+            background: var(--canvas);
             font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            font-size: 16px;
-            line-height: 1.75;
+            font-size: 15px;
+            line-height: 1.65;
             -webkit-font-smoothing: antialiased;
         }
 
         a {
-            color: var(--navy-700);
+            color: var(--navy);
             text-underline-offset: 3px;
         }
 
@@ -68,135 +59,149 @@
         }
 
         .page {
-            width: min(calc(100% - 32px), 960px);
+            width: min(calc(100% - 32px), 1080px);
             margin: 0 auto;
-            padding: 28px 0 64px;
+            padding: 24px 0 48px;
         }
 
         .hero {
-            overflow: hidden;
-            padding: clamp(28px, 6vw, 56px);
-            color: #d7e7f3;
-            background: linear-gradient(135deg, var(--navy-950), var(--navy-800));
-            border-radius: 24px;
+            padding: 28px 32px;
+            color: var(--text);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-top: 4px solid var(--navy);
+            border-radius: 14px;
             box-shadow: var(--shadow);
         }
 
         .brand {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            margin-bottom: 28px;
-            color: var(--white);
-            font-size: 18px;
-            font-weight: 800;
+            gap: 9px;
+            margin-bottom: 22px;
+            color: var(--text-strong);
+            font-size: 16px;
+            font-weight: 750;
             text-decoration: none;
         }
 
         .brand-mark {
             display: grid;
-            width: 38px;
-            height: 38px;
+            width: 34px;
+            height: 34px;
             place-items: center;
-            color: var(--white);
+            color: #ffffff;
             background: var(--orange);
-            border-radius: 11px;
+            border-radius: 8px;
+            font-size: 14px;
             font-weight: 800;
         }
 
         .eyebrow {
-            display: inline-flex;
-            margin: 0 0 14px;
-            padding: 6px 11px;
-            color: #ffe2cf;
-            background: rgba(250, 102, 8, 0.17);
-            border: 1px solid rgba(255, 226, 207, 0.25);
-            border-radius: 999px;
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: 0.08em;
+            margin: 0 0 8px;
+            color: var(--orange);
+            font-size: 11px;
+            font-weight: 750;
+            letter-spacing: 0.09em;
             text-transform: uppercase;
         }
 
         h1,
         h2,
         h3 {
-            color: var(--gray-900);
+            color: var(--text-strong);
             line-height: 1.25;
             text-wrap: balance;
         }
 
         .hero h1 {
-            max-width: 760px;
+            max-width: 720px;
             margin: 0;
-            color: var(--white);
-            font-size: clamp(34px, 7vw, 58px);
-            letter-spacing: -0.045em;
+            font-size: clamp(30px, 5vw, 38px);
+            letter-spacing: -0.035em;
         }
 
         .hero-description {
             max-width: 720px;
-            margin: 20px 0 0;
-            font-size: clamp(16px, 2.3vw, 19px);
+            margin: 12px 0 0;
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: 24px;
+            align-items: end;
         }
 
         .metadata {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 26px;
+            display: grid;
+            min-width: 190px;
+            gap: 7px;
         }
 
         .metadata span {
-            padding: 7px 12px;
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.14);
-            border-radius: 999px;
-            font-size: 13px;
+            display: grid;
+            gap: 1px;
+            padding: 7px 10px;
+            background: var(--surface-subtle);
+            border-left: 2px solid var(--orange);
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .metadata small {
+            color: var(--muted);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
         }
 
         .content {
-            margin-top: 20px;
-            padding: clamp(24px, 5vw, 48px);
-            background: var(--white);
-            border: 1px solid var(--gray-200);
-            border-radius: 20px;
-            box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+            margin-top: 12px;
+            padding: 28px 32px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
         }
 
         .notice {
-            margin: 0 0 32px;
-            padding: 17px 20px;
-            color: #7c2d12;
-            background: var(--orange-soft);
-            border: 1px solid #fed7aa;
-            border-left: 4px solid var(--orange);
+            margin: 0 0 20px;
+            padding: 12px 14px;
+            color: #334e68;
+            background: #f2f7fa;
+            border: 1px solid #d8e7f0;
+            border-left: 3px solid var(--navy);
             border-radius: var(--radius);
         }
 
         .notice strong {
-            color: #9a3412;
+            color: var(--navy-dark);
         }
 
         .toc {
-            margin: 0 0 42px;
-            padding: 22px 24px;
-            background: var(--blue-soft);
-            border: 1px solid #d8eaf4;
+            margin: 0 0 24px;
+            padding: 15px 18px;
+            background: var(--surface-subtle);
+            border: 1px solid var(--border);
             border-radius: var(--radius);
         }
 
         .toc h2 {
-            margin: 0 0 12px;
-            font-size: 18px;
+            margin: 0 0 9px;
+            font-size: 15px;
         }
 
         .toc ol {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 8px 28px;
+            gap: 5px 22px;
             margin: 0;
-            padding-left: 22px;
+            padding-left: 20px;
+            font-size: 13px;
         }
 
         .toc a {
@@ -204,9 +209,9 @@
         }
 
         section {
-            margin-top: 42px;
-            padding-top: 32px;
-            border-top: 1px solid var(--gray-200);
+            margin-top: 28px;
+            padding-top: 22px;
+            border-top: 1px solid var(--border);
         }
 
         section:first-of-type {
@@ -216,63 +221,46 @@
         }
 
         h2 {
-            margin: 0 0 16px;
-            font-size: clamp(23px, 3.5vw, 30px);
-            letter-spacing: -0.025em;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            margin: 0 0 10px;
+            font-size: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        h2::before {
+            width: 3px;
+            height: 20px;
+            flex: 0 0 auto;
+            background: var(--orange);
+            border-radius: 999px;
+            content: "";
         }
 
         h3 {
-            margin: 26px 0 9px;
-            font-size: 19px;
+            margin: 19px 0 7px;
+            font-size: 16px;
         }
 
         p {
-            margin: 0 0 16px;
+            margin: 0 0 11px;
         }
 
         ul,
         ol {
-            margin: 12px 0 20px;
-            padding-left: 24px;
+            margin: 7px 0 14px;
+            padding-left: 22px;
         }
 
         li + li {
-            margin-top: 8px;
-        }
-
-        .identity-list {
-            overflow: hidden;
-            margin: 20px 0 24px;
-            border: 1px solid var(--gray-200);
-            border-radius: var(--radius);
-        }
-
-        .identity-row {
-            display: grid;
-            grid-template-columns: 190px 1fr;
-            gap: 20px;
-            padding: 14px 18px;
-        }
-
-        .identity-row + .identity-row {
-            border-top: 1px solid var(--gray-200);
-        }
-
-        .identity-row dt {
-            color: var(--gray-600);
-            font-weight: 700;
-        }
-
-        .identity-row dd {
-            margin: 0;
-            color: var(--gray-900);
-            font-weight: 600;
+            margin-top: 5px;
         }
 
         .table-wrap {
             overflow-x: auto;
-            margin: 20px 0 24px;
-            border: 1px solid var(--gray-200);
+            margin: 15px 0 17px;
+            border: 1px solid var(--border);
             border-radius: var(--radius);
         }
 
@@ -280,30 +268,30 @@
             width: 100%;
             min-width: 650px;
             border-collapse: collapse;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         caption {
-            padding: 15px 18px;
-            color: var(--gray-900);
-            background: var(--blue-soft);
-            font-weight: 800;
+            padding: 11px 13px;
+            color: var(--text-strong);
+            background: var(--surface-subtle);
+            font-weight: 700;
             text-align: left;
         }
 
         th,
         td {
-            padding: 13px 16px;
-            border-bottom: 1px solid var(--gray-200);
+            padding: 9px 12px;
+            border-bottom: 1px solid var(--border);
             text-align: left;
             vertical-align: top;
         }
 
         th {
-            color: var(--gray-900);
-            background: var(--gray-50);
-            font-size: 12px;
-            letter-spacing: 0.04em;
+            color: var(--text-strong);
+            background: #f4f7f9;
+            font-size: 10px;
+            letter-spacing: 0.05em;
             text-transform: uppercase;
         }
 
@@ -313,74 +301,75 @@
 
         .tag {
             display: inline-block;
-            padding: 3px 8px;
+            padding: 2px 7px;
+            border: 1px solid currentColor;
             border-radius: 999px;
-            font-size: 11px;
-            font-weight: 800;
+            font-size: 10px;
+            font-weight: 700;
             white-space: nowrap;
         }
 
         .tag-essential {
-            color: var(--red);
-            background: var(--red-soft);
+            color: #a33a3a;
+            background: #fff7f7;
         }
 
         .tag-operational {
-            color: var(--navy-800);
-            background: #e8f2f9;
+            color: var(--navy);
+            background: #f2f8fb;
         }
 
         .tag-optional {
-            color: var(--green);
-            background: var(--green-soft);
+            color: #237a57;
+            background: #f1faf5;
         }
 
         .callout {
-            margin: 20px 0;
-            padding: 17px 20px;
-            background: var(--blue-soft);
-            border: 1px solid #d8eaf4;
-            border-left: 4px solid var(--navy-800);
+            margin: 14px 0;
+            padding: 12px 14px;
+            background: #f2f7fa;
+            border: 1px solid #d8e7f0;
+            border-left: 3px solid var(--navy);
             border-radius: var(--radius);
         }
 
         .callout.warning {
-            color: #78350f;
-            background: var(--amber-soft);
-            border-color: #fde68a;
-            border-left-color: var(--amber);
+            color: #79520d;
+            background: #fffbeb;
+            border-color: #f5df9d;
+            border-left-color: #d38a12;
         }
 
         .rights {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 12px;
-            margin: 20px 0 24px;
+            gap: 9px;
+            margin: 14px 0 17px;
         }
 
         .right-item {
-            padding: 17px 18px;
-            background: var(--gray-50);
-            border: 1px solid var(--gray-200);
+            padding: 12px 14px;
+            background: var(--surface-subtle);
+            border: 1px solid var(--border);
             border-radius: var(--radius);
         }
 
         .right-item strong {
             display: block;
-            margin-bottom: 3px;
-            color: var(--gray-900);
+            margin-bottom: 2px;
+            color: var(--text-strong);
         }
 
         .contact {
-            margin-top: 42px;
-            padding: 24px;
+            margin-top: 28px;
+            padding: 18px;
             color: #d7e7f3;
-            background: linear-gradient(135deg, var(--navy-950), var(--navy-800));
+            background: var(--navy-dark);
             border-radius: var(--radius);
         }
 
         .contact h2 {
-            color: var(--white);
+            color: #ffffff;
         }
 
         .contact a {
@@ -389,90 +378,41 @@
         }
 
         footer {
-            padding: 24px 8px 0;
-            color: var(--gray-500);
-            font-size: 13px;
+            padding: 18px 8px 0;
+            color: var(--muted);
+            font-size: 12px;
             text-align: center;
         }
 
         @media (max-width: 700px) {
             .page {
-                width: min(calc(100% - 20px), 960px);
+                width: min(calc(100% - 20px), 1080px);
                 padding-top: 10px;
             }
 
             .hero,
             .content {
-                border-radius: 16px;
+                border-radius: 12px;
+            }
+
+            .hero {
+                padding: 22px 20px;
             }
 
             .content {
                 margin-top: 10px;
+                padding: 22px 20px;
             }
 
+            .hero-grid,
             .toc ol,
             .rights {
                 grid-template-columns: 1fr;
             }
 
-            .identity-row {
-                grid-template-columns: 1fr;
-                gap: 3px;
-            }
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                color-scheme: dark;
-            }
-
-            body {
-                color: #cbd5e1;
-                background: #0b1c30;
-            }
-
-            h1,
-            h2,
-            h3,
-            th,
-            .identity-row dd,
-            .right-item strong {
-                color: #eaf1ff;
-            }
-
-            .content {
-                background: #142b43;
-                border-color: #2d4964;
-            }
-
-            .toc,
-            .callout,
-            .right-item,
-            th,
-            caption,
-            .identity-list,
-            .identity-row,
-            .identity-row + .identity-row,
-            .table-wrap,
-            th,
-            td,
-            section {
-                background-color: #10253b;
-                border-color: #2d4964;
-            }
-
-            a {
-                color: #b0c6ff;
-            }
-
-            .notice {
-                color: #fed7aa;
-                background: #43240f;
-                border-color: #9a4a16;
-            }
-
-            .notice strong {
-                color: #ffedd5;
+            .metadata {
+                min-width: 0;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
         }
 
@@ -514,43 +454,56 @@
 <body>
     <div class="page">
         <header class="hero">
-            <div class="brand" aria-label="MoTrax">
-                <span class="brand-mark" aria-hidden="true">M</span>
-                <span>MoTrax</span>
-            </div>
-            <p class="eyebrow">Legal · Privasi</p>
-            <h1>Kebijakan Privasi</h1>
-            <p class="hero-description">
-                Penjelasan mengenai informasi yang diproses MoTrax, tujuan pemrosesannya,
-                pihak yang mungkin terlibat, serta hak Anda terhadap data pribadi.
-            </p>
-            <div class="metadata" aria-label="Informasi dokumen">
-                <span><strong>Berlaku sejak:</strong> [TANGGAL PEMBARUAN]</span>
-                <span><strong>Versi:</strong> 1.0</span>
-                <span><strong>Bahasa:</strong> Indonesia</span>
+            <div class="hero-grid">
+                <div>
+                    <div class="brand" aria-label="MoTrax">
+                        <span class="brand-mark" aria-hidden="true">M</span>
+                        <span>MoTrax</span>
+                    </div>
+                    <p class="eyebrow">Legal · Privasi</p>
+                    <h1>Kebijakan Privasi</h1>
+                    <p class="hero-description">
+                        Dokumen ini menjelaskan cara MoTrax memproses data pribadi,
+                        tujuan pemrosesannya, pihak yang terlibat, serta hak pengguna
+                        atas datanya.
+                    </p>
+                </div>
+                <div class="metadata" aria-label="Informasi dokumen">
+                    <span>
+                        <small>Terakhir diperbarui</small>
+                        <strong>25 September 2026</strong>
+                    </span>
+                    <span>
+                        <small>Versi dokumen</small>
+                        <strong>1.0</strong>
+                    </span>
+                    <span>
+                        <small>Bahasa</small>
+                        <strong>Indonesia</strong>
+                    </span>
+                </div>
             </div>
         </header>
 
         <main class="content">
             <div class="notice">
-                <strong>Ringkasan singkat:</strong> MoTrax memproses data akun,
-                data penggunaan, serta data posisi dan telemetri kendaraan untuk
-                menyediakan layanan, menjaga keamanan, dan meningkatkan kualitas
-                layanan. MoTrax tidak menjual data pribadi kepada pengiklan.
+                <strong>Ikhtisar:</strong> MoTrax memproses data akun, data penggunaan,
+                serta data posisi dan telemetri kendaraan untuk menyediakan layanan,
+                menjaga keamanan, dan meningkatkan kualitas layanan. MoTrax tidak
+                menjual data pribadi kepada pihak pengiklan.
             </div>
 
             <nav class="toc" aria-label="Daftar isi">
                 <h2>Daftar Isi</h2>
                 <ol>
                     <li><a href="#scope">Ruang lingkup</a></li>
-                    <li><a href="#identity">Identitas pengendali data</a></li>
                     <li><a href="#collection">Informasi yang diproses</a></li>
                     <li><a href="#sources">Sumber informasi</a></li>
                     <li><a href="#purpose">Tujuan pemrosesan</a></li>
                     <li><a href="#sharing">Berbagi data</a></li>
                     <li><a href="#security">Keamanan dan retensi</a></li>
                     <li><a href="#cookies">Cookie dan penyimpanan lokal</a></li>
-                    <li><a href="#rights">Hak Anda</a></li>
+                    <li><a href="#rights">Hak pengguna</a></li>
                     <li><a href="#children">Privasi anak</a></li>
                     <li><a href="#changes">Perubahan kebijakan</a></li>
                     <li><a href="#contact">Hubungi kami</a></li>
@@ -561,51 +514,24 @@
                 <h2>1. Ruang Lingkup</h2>
                 <p>
                     Kebijakan ini berlaku untuk situs web, aplikasi web, dan aplikasi
-                    Android MoTrax. MoTrax adalah platform fleet intelligence untuk
-                    pemantauan armada, kendaraan, driver, perjalanan, event, geofence,
-                    dan operasional armada.
+                    Android MoTrax. MoTrax menyediakan platform kecerdasan armada untuk
+                    pemantauan kendaraan, pengemudi, perjalanan, peristiwa, geofence,
+                    dan aktivitas operasional armada.
                 </p>
                 <p>
                     MoTrax menyediakan infrastruktur dan perangkat lunak platform.
-                    Untuk data kendaraan yang diproses atas nama sebuah organisasi
-                    pelanggan, organisasi tersebut dapat menjadi pengendali data,
-                    sedangkan MoTrax memproses data tersebut berdasarkan instruksi dan
-                    tujuan layanan yang disepakati.
+                    Untuk data kendaraan yang diproses atas nama organisasi pelanggan,
+                    organisasi tersebut dapat menjadi pengendali data, sedangkan MoTrax
+                    memproses data tersebut berdasarkan instruksi dan tujuan layanan
+                    yang disepakati.
                 </p>
-            </section>
-
-            <section id="identity">
-                <h2>2. Identitas Pengendali Data</h2>
-                <p>
-                    Lengkapi identitas badan usaha resmi di bawah ini sebelum dokumen
-                    dipublikasikan. Jika data tersebut belum tersedia, permintaan
-                    dapat tetap dikirim kepada tim dukungan MoTrax.
-                </p>
-                <dl class="identity-list">
-                    <div class="identity-row">
-                        <dt>Nama produk</dt>
-                        <dd>MoTrax</dd>
-                    </div>
-                    <div class="identity-row">
-                        <dt>Badan usaha / operator</dt>
-                        <dd>[NAMA BADAN USAHA]</dd>
-                    </div>
-                    <div class="identity-row">
-                        <dt>Alamat resmi</dt>
-                        <dd>[ALAMAT BADAN USAHA]</dd>
-                    </div>
-                    <div class="identity-row">
-                        <dt>Email privasi</dt>
-                        <dd>[EMAIL RESMI]</dd>
-                    </div>
-                </dl>
             </section>
 
             <section id="collection">
-                <h2>3. Informasi yang Kami Proses</h2>
+                <h2>2. Informasi yang Diproses</h2>
                 <p>
                     MoTrax memproses informasi yang diperlukan untuk menyediakan
-                    layanan, memenuhi kewajiban yang sah, menjaga keamanan, dan
+                    layanan, memenuhi kewajiban yang sah, menjaga keamanan, serta
                     meningkatkan pengalaman pengguna.
                 </p>
 
@@ -629,7 +555,7 @@
                             </tr>
                             <tr>
                                 <td>Keanggotaan dan akses</td>
-                                <td>Organisasi/team, peran, izin akses, dan hubungan dengan kendaraan</td>
+                                <td>Organisasi atau tim, peran, izin akses, dan hubungan dengan kendaraan</td>
                                 <td>Menegakkan kontrol akses dan pembatasan data</td>
                                 <td><span class="tag tag-essential">Esensial</span></td>
                             </tr>
@@ -646,8 +572,8 @@
                                 <td><span class="tag tag-operational">Operasional</span></td>
                             </tr>
                             <tr>
-                                <td>Perjalanan dan event</td>
-                                <td>Rute, berhenti, durasi, statistik perjalanan, event, dan riwayat aktivitas</td>
+                                <td>Perjalanan dan peristiwa</td>
+                                <td>Rute, berhenti, durasi, statistik perjalanan, peristiwa, dan riwayat aktivitas</td>
                                 <td>Analisis perjalanan, notifikasi, dan insight armada</td>
                                 <td><span class="tag tag-operational">Operasional</span></td>
                             </tr>
@@ -660,7 +586,7 @@
                             <tr>
                                 <td>Teknis dan keamanan</td>
                                 <td>Alamat IP, User-Agent, ID sesi, log akses, error, dan identifier perangkat</td>
-                                <td>Keamanan, debugging, dan kompatibilitas aplikasi</td>
+                                <td>Keamanan, diagnostik, dan kompatibilitas aplikasi</td>
                                 <td><span class="tag tag-essential">Esensial</span></td>
                             </tr>
                             <tr>
@@ -674,8 +600,8 @@
                 </div>
 
                 <div class="callout warning">
-                    <strong>Catatan tentang lokasi:</strong> data posisi biasanya
-                    berasal dari perangkat GPS atau vehicle tracker yang dipasang
+                    <strong>Catatan tentang lokasi:</strong> data posisi umumnya
+                    berasal dari perangkat GPS atau pelacak kendaraan yang dipasang
                     pada kendaraan dan dikirim melalui platform telematika. MoTrax
                     tidak menggunakan sensor GPS ponsel pengguna sebagai sumber
                     utama data armada.
@@ -683,55 +609,56 @@
             </section>
 
             <section id="sources">
-                <h2>4. Sumber Informasi</h2>
+                <h2>3. Sumber Informasi</h2>
                 <ul>
-                    <li><strong>Dari Anda:</strong> data yang diberikan saat membuat atau memperbarui akun, menggunakan fitur, atau menghubungi dukungan.</li>
-                    <li><strong>Dari organisasi Anda:</strong> administrator dapat memasukkan kendaraan, device, driver, geofence, dan aturan akses.</li>
-                    <li><strong>Dari perangkat GPS/telematika:</strong> posisi, status, sensor, perjalanan, dan event kendaraan.</li>
-                    <li><strong>Dari perangkat dan aplikasi:</strong> informasi teknis yang diperlukan untuk keamanan dan kompatibilitas.</li>
-                    <li><strong>Dari penyedia layanan:</strong> status layanan, konfigurasi aplikasi, dan informasi teknis yang diperlukan untuk operasional.</li>
+                    <li><strong>Data yang diberikan pengguna:</strong> informasi yang disampaikan saat membuat atau memperbarui akun, menggunakan layanan, atau menghubungi tim dukungan.</li>
+                    <li><strong>Data dari organisasi pengguna:</strong> data kendaraan, perangkat, pengemudi, geofence, dan aturan akses yang dikelola oleh administrator.</li>
+                    <li><strong>Data dari perangkat GPS dan telematika:</strong> posisi, status, sensor, perjalanan, dan peristiwa kendaraan.</li>
+                    <li><strong>Data teknis:</strong> informasi perangkat, jaringan, aplikasi, serta log yang diperlukan untuk keamanan, diagnostik, dan kompatibilitas.</li>
+                    <li><strong>Data dari penyedia layanan:</strong> informasi status layanan dan konfigurasi aplikasi yang diperlukan untuk operasional.</li>
                 </ul>
             </section>
 
             <section id="purpose">
-                <h2>5. Tujuan Pemrosesan</h2>
+                <h2>4. Tujuan Pemrosesan</h2>
                 <ol>
-                    <li><strong>Menyediakan dan menjalankan layanan.</strong> Mendukung autentikasi, dashboard, peta, laporan, notifikasi, monitoring, dan fitur lain yang Anda gunakan.</li>
-                    <li><strong>Melindungi akun dan platform.</strong> Mendeteksi login mencurigakan, akses tidak sah, penyalahgunaan, dan menjaga integritas data.</li>
-                    <li><strong>Mengelola akses dan batas data tenant.</strong> Memastikan pengguna hanya melihat kendaraan, laporan, dan data yang sesuai dengan perannya.</li>
-                    <li><strong>Memperbaiki dan meningkatkan layanan.</strong> Menganalisis masalah, error, performa, dan pola penggunaan secara aman.</li>
-                    <li><strong>Mengirim komunikasi penting.</strong> Mengirim notifikasi operasional, perubahan akun, pembaruan layanan, atau informasi penting lainnya.</li>
-                    <li><strong>Memenuhi kewajiban yang sah.</strong> Mematuhi peraturan dan proses hukum yang berlaku.</li>
+                    <li><strong>Penyediaan dan operasional layanan:</strong> mendukung autentikasi, dasbor, peta, laporan, notifikasi, pemantauan, dan fitur lain yang digunakan pengguna.</li>
+                    <li><strong>Proteksi akun dan platform:</strong> mendeteksi aktivitas login yang mencurigakan, akses tidak sah, penyalahgunaan layanan, dan menjaga integritas data.</li>
+                    <li><strong>Pengelolaan akses dan batas data tenant:</strong> memastikan pengguna hanya dapat mengakses kendaraan, laporan, dan data sesuai kewenangannya.</li>
+                    <li><strong>Pengembangan dan peningkatan layanan:</strong> menganalisis gangguan, kesalahan, performa, dan pola penggunaan secara aman.</li>
+                    <li><strong>Komunikasi penting:</strong> mengirim notifikasi operasional, perubahan akun, pembaruan layanan, dan informasi penting lainnya.</li>
+                    <li><strong>Kepatuhan terhadap kewajiban yang sah:</strong> mematuhi regulasi dan prosedur hukum yang berlaku.</li>
                 </ol>
                 <p>
                     Pemrosesan data dilakukan berdasarkan pelaksanaan perjanjian,
-                    kewajiban yang sah, persetujuan Anda untuk fitur tertentu, atau
-                    kewajiban hukum, bergantung pada konteks datanya.
+                    kewajiban yang sah, persetujuan pengguna untuk fitur tertentu,
+                    atau kewajiban hukum, bergantung pada konteks datanya.
                 </p>
             </section>
 
             <section id="sharing">
-                <h2>6. Berbagi dan Penyerahan Data</h2>
+                <h2>5. Berbagi dan Penyerahan Data</h2>
                 <p>MoTrax tidak menjual atau menyewakan data pribadi kepada pengiklan.</p>
 
-                <h3>6.1 Di dalam organisasi Anda</h3>
+                <h3>5.1 Di dalam organisasi pengguna</h3>
                 <p>
-                    Data kendaraan dan telemetry dapat diakses oleh anggota organisasi
-                    yang memiliki izin sesuai peran dan hak akses. Administrator
-                    organisasi mungkin dapat melihat data yang tidak tersedia bagi
-                    pengguna dengan izin terbatas.
+                    Data kendaraan dan telemetri dapat diakses oleh anggota
+                    organisasi yang memiliki izin sesuai peran dan hak akses.
+                    Administrator organisasi mungkin dapat melihat data yang tidak
+                    tersedia bagi pengguna dengan izin terbatas.
                 </p>
 
-                <h3>6.2 Penyedia layanan</h3>
+                <h3>5.2 Penyedia layanan</h3>
                 <p>
                     MoTrax dapat menggunakan penyedia pihak ketiga untuk hosting,
-                    database, layanan realtime, peta/geocoding, email, dukungan, backup,
-                    keamanan, monitoring, atau layanan lain yang diperlukan. Penyedia
-                    tersebut hanya memproses data sejauh diperlukan, sesuai kontrak,
-                    dan dengan kewajiban kerahasiaan serta keamanan.
+                    basis data, layanan waktu nyata, pemetaan/geocoding, email,
+                    dukungan, pencadangan, keamanan, pemantauan, atau layanan lain
+                    yang diperlukan. Penyedia tersebut hanya memproses data sejauh
+                    diperlukan, sesuai kontrak, serta memiliki kewajiban
+                    kerahasiaan dan keamanan.
                 </p>
 
-                <h3>6.3 Transfer dan kewajiban hukum</h3>
+                <h3>5.3 Transfer dan kewajiban hukum</h3>
                 <p>
                     Data dapat dipindahkan ke server atau penyedia di wilayah lain
                     apabila diperlukan. Data juga dapat diserahkan kepada otoritas
@@ -739,40 +666,41 @@
                     atau tindakan hukum yang sah.
                 </p>
 
-                <h3>6.4 Perubahan kepemilikan bisnis</h3>
+                <h3>5.4 Perubahan kepemilikan bisnis</h3>
                 <p>
                     Dalam kondisi merger, akuisisi, restrukturisasi, atau penjualan
-                    aset, data dapat dialihkan kepada pihak yang menerima bisnis. Kami
-                    akan mengambil langkah yang wajar untuk memastikan penerima tetap
-                    melindungi data sesuai kebijakan ini dan kewajiban yang berlaku.
+                    aset, data dapat dialihkan kepada pihak yang menerima bisnis.
+                    MoTrax akan mengambil langkah yang wajar untuk memastikan
+                    penerima tetap melindungi data sesuai kebijakan ini dan
+                    kewajiban yang berlaku.
                 </p>
             </section>
 
             <section id="security">
-                <h2>7. Keamanan dan Retensi Data</h2>
-                <h3>7.1 Pengamanan</h3>
-                <p>MoTrax menggunakan langkah pengaman yang wajar, termasuk:</p>
+                <h2>6. Keamanan dan Retensi Data</h2>
+                <h3>6.1 Pengamanan</h3>
+                <p>MoTrax menerapkan langkah pengaman yang wajar, termasuk:</p>
                 <ul>
                     <li>Komunikasi aplikasi melalui HTTPS/TLS.</li>
                     <li>Penyimpanan kata sandi dalam bentuk hash, bukan teks biasa.</li>
-                    <li>Kontrol akses berbasis peran dan pembatasan tenant.</li>
-                    <li>Logging, pemantauan aktivitas, dan pembatasan akses internal.</li>
-                    <li>Backup dan pemulihan data secara berkala.</li>
+                    <li>Kontrol akses berbasis peran dan pembatasan akses antarorganisasi.</li>
+                    <li>Pencatatan, pemantauan aktivitas, dan pembatasan akses internal.</li>
+                    <li>Pencadangan dan pemulihan data secara berkala.</li>
                     <li>Prosedur penanganan insiden keamanan.</li>
                 </ul>
                 <p>
                     Tidak ada sistem yang sepenuhnya bebas risiko. Jika terjadi
-                    insiden, kami akan melakukan langkah yang sesuai untuk membatasi
-                    dampak, melakukan investigasi, dan memberi tahu pihak yang terdampak
-                    apabila diwajibkan.
+                    insiden, MoTrax akan melakukan langkah yang sesuai untuk
+                    membatasi dampak, melakukan pemeriksaan, dan memberi tahu pihak
+                    yang terdampak apabila diwajibkan.
                 </p>
 
-                <h3>7.2 Retensi</h3>
+                <h3>6.2 Retensi</h3>
                 <ul>
                     <li><strong>Data akun:</strong> disimpan selama akun aktif atau selama periode yang diperlukan untuk penyelesaian tujuan dan kewajiban yang sah.</li>
-                    <li><strong>Data telemetry, perjalanan, dan event:</strong> mengikuti pengaturan retensi organisasi serta kebutuhan operasional, hukum, dan audit.</li>
-                    <li><strong>Log teknis:</strong> disimpan selama periode yang diperlukan untuk keamanan, debugging, dan investigasi.</li>
-                    <li><strong>Backup:</strong> data dapat tetap berada pada backup selama periode rotasi dan pemulihan.</li>
+                    <li><strong>Data telemetry, perjalanan, dan peristiwa:</strong> mengikuti pengaturan retensi organisasi serta kebutuhan operasional, hukum, dan audit.</li>
+                    <li><strong>Log teknis:</strong> disimpan selama periode yang diperlukan untuk keamanan, diagnostik, dan pemeriksaan.</li>
+                    <li><strong>Pencadangan:</strong> data dapat tetap berada pada salinan cadangan selama periode rotasi dan pemulihan.</li>
                 </ul>
                 <p>
                     Setelah tidak diperlukan, data dihapus, dianonimkan, atau
@@ -784,23 +712,23 @@
             </section>
 
             <section id="cookies">
-                <h2>8. Cookie dan Penyimpanan Lokal</h2>
+                <h2>7. Cookie dan Penyimpanan Lokal</h2>
                 <p>MoTrax dapat menggunakan teknologi berikut:</p>
                 <ul>
                     <li><strong>Cookie sesi:</strong> diperlukan untuk menjaga login dan mencegah penyalahgunaan sesi.</li>
-                    <li><strong>Local storage:</strong> dapat menyimpan tema dan preferensi antarmuka.</li>
+                    <li><strong>Penyimpanan lokal:</strong> dapat menyimpan tema dan preferensi antarmuka.</li>
                     <li><strong>Cookie keamanan:</strong> dapat digunakan untuk melindungi login, mengingat perangkat, atau membatasi permintaan otomatis.</li>
                 </ul>
                 <p>
                     MoTrax tidak dirancang untuk menjual profil pengguna kepada
-                    jaringan iklan pihak ketiga. Jika fitur analytics atau layanan
-                    serupa diaktifkan, kebijakan ini harus diperbarui dengan nama
+                    jaringan iklan pihak ketiga. Jika fitur analitik atau layanan
+                    serupa diaktifkan, kebijakan ini akan diperbarui dengan nama
                     penyedia, tujuan, dan opsi yang tersedia.
                 </p>
             </section>
 
             <section id="rights">
-                <h2>9. Hak Anda sebagai Subjek Data</h2>
+                <h2>8. Hak Pengguna sebagai Subjek Data</h2>
                 <p>
                     Ketentuan perlindungan data yang berlaku, termasuk UU Nomor 27
                     Tahun 2022 tentang Pelindungan Data Pribadi, dapat memberikan
@@ -817,21 +745,21 @@
                     <div class="right-item"><strong>Hak atas keputusan otomatis</strong> Memperoleh informasi mengenai keputusan otomatis, bila berlaku.</div>
                 </div>
                 <p>
-                    Untuk menggunakan hak tersebut, hubungi kami melalui bagian
-                    <a href="#contact">Hubungi Kami</a>. Untuk data yang dikelola dalam
+                    Untuk menggunakan hak tersebut, hubungi MoTrax melalui bagian
+                    <a href="#contact">Hubungi MoTrax</a>. Untuk data yang dikelola dalam
                     organisasi, administrator organisasi mungkin perlu membantu
-                    proses verifikasi dan penghapusan. Kami dapat meminta informasi
+                    proses verifikasi dan penghapusan. MoTrax dapat meminta informasi
                     tambahan untuk mencegah penyalahgunaan hak dan melindungi data
-                    orang lain.
+                    pihak lain.
                 </p>
                 <p>
-                    Anda juga berhak mengajukan keluhan kepada otoritas atau lembaga
-                    perlindungan data yang berwenang sesuai hukum yang berlaku.
+                    Pengguna juga berhak mengajukan keluhan kepada otoritas atau
+                    lembaga perlindungan data yang berwenang sesuai hukum yang berlaku.
                 </p>
             </section>
 
             <section id="children">
-                <h2>10. Privasi Anak</h2>
+                <h2>9. Privasi Anak</h2>
                 <p>
                     MoTrax merupakan layanan bisnis dan profesional untuk organisasi
                     serta pengendali armada. Layanan ini tidak diarahkan untuk anak
@@ -839,14 +767,14 @@
                     pribadi anak tanpa persetujuan atau dasar hukum yang sesuai.
                 </p>
                 <p>
-                    Jika Anda yakin terdapat data anak yang diproses secara tidak
-                    sesuai, segera hubungi kami. Kami akan meninjau dan mengambil
+                    Apabila terdapat indikasi bahwa data anak diproses secara tidak
+                    sesuai, segera hubungi MoTrax. MoTrax akan meninjau dan mengambil
                     tindakan yang diperlukan.
                 </p>
             </section>
 
             <section id="changes">
-                <h2>11. Perubahan Kebijakan Privasi</h2>
+                <h2>10. Perubahan Kebijakan Privasi</h2>
                 <p>
                     Kebijakan ini dapat diperbarui ketika layanan, teknologi, hukum,
                     atau praktik pemrosesan data berubah. Versi terbaru akan
@@ -861,28 +789,27 @@
             </section>
 
             <section id="contact" class="contact">
-                <h2>12. Hubungi Kami</h2>
+                <h2>11. Kontak</h2>
                 <p>
                     Untuk pertanyaan, masukan, atau permintaan terkait privasi dan
-                    pemrosesan data, kirimkan pesan melalui:
+                    pemrosesan data, hubungi tim MoTrax melalui:
                 </p>
                 <p>
-                    <strong>Email:</strong> [EMAIL RESMI]<br>
-                    <strong>Badan usaha:</strong> [NAMA BADAN USAHA]<br>
-                    <strong>Alamat:</strong> [ALAMAT BADAN USAHA]
+                    <strong>Email:</strong>
+                    <a href="mailto:admin@motrax.id">admin@motrax.id</a>
                 </p>
                 <p>
-                    Sertakan alasan permintaan dan informasi yang cukup untuk
-                    membantu verifikasi. Jangan mengirimkan kata sandi, token, atau
-                    secret melalui email.
+                    Sertakan alasan permintaan dan informasi yang memadai untuk
+                    membantu proses verifikasi. Jangan mengirimkan kata sandi, token,
+                    atau informasi rahasia melalui email.
                 </p>
             </section>
         </main>
 
         <footer>
-            <strong>MoTrax</strong> · Fleet Intelligence Platform<br>
-            Kebijakan Privasi · Terakhir diperbarui [TANGGAL PEMBARUAN]
+            <strong>MoTrax</strong> · Platform Kecerdasan Armada<br>
+            Kebijakan Privasi · Terakhir diperbarui 25 September 2026
         </footer>
     </div>
 </body>
-</html> 
+</html>
